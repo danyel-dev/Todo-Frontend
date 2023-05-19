@@ -1,7 +1,8 @@
-import List from "./components/List";
+import UserLists from "./components/UserLists";
+
 
 export default function App() {
   return (
-    <List />
+    <UserLists />
   );
-}
+};
