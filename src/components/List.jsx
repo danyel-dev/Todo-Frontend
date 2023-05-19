@@ -1,15 +1,13 @@
 import Item from './Item'
 
 
-export default function List({nome}) {
+export default function List({name, items}) {
     return (
         <div>
-            <h1>{nome}</h1>
-            
+            <h1>{name}</h1>
+
             <ul>
-                <Item nome="Fazer a janta"></Item>
-                <Item nome="Andar com o cachorro"></Item>
-                <Item nome="Estudar"></Item>
+                { items.map(item => <Item key={item.id} name={item.name} done={item.done} />) }
             </ul>
         </div>
     );

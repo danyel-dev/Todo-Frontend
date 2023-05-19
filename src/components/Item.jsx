@@ -1,5 +1,5 @@
-export default function Item({nome}) {
+export default function Item({name, done}) {
     return (
-        <li>{nome}</li>
+        <li>{name}: {done === true? "concluida": "Não concluida" }</li>
     );
 };
