@@ -16,7 +16,7 @@ export default function UserLists() {
             }
         }
 
-        axios.get(BASE_URL + "lists", config)
+        axios.get(BASE_URL + "list", config)
         .then(response => setLists(response.data))
     }, [])
     

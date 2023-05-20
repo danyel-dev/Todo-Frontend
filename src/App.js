@@ -1,8 +1,10 @@
 import UserLists from "./components/UserLists";
+import Login from "./components/Login";
 
 
 export default function App() {
-  return (
-    <UserLists />
-  );
-};
+  let token = "a"
+  
+  if(!token) return <Login />;
+  return <UserLists />
+}
