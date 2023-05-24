@@ -12,7 +12,7 @@ export default function UserLists() {
         const config = {
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Token 5fef628e5b296d906e6a0732bfdc78e40d2daf2f',
+                'Authorization': 'Token ' + localStorage.getItem('token'),
             }
         }
 
